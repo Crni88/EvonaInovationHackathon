@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatCardModule} from '@angular/material/card';
+
 
 @Component({
   selector: 'app-my-component',
@@ -11,6 +11,7 @@ export class MyComponentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
