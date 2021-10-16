@@ -25,6 +25,12 @@ export class MatchesServis{
     toogle:boolean=true;
     ngOnInit(): void {}
 
+    //napraviti metodu da prosljedi parametar id 
+
+    //subject dodati 
+
+    
+
 
 
 
