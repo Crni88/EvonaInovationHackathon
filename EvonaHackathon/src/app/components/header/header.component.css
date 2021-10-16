@@ -17,7 +17,7 @@ body{
     right: 0;
     left: 0;
     background-color: black;
-    
+    z-index: 100;
 }
 #menu-button{
     height: 32px;
@@ -31,18 +31,18 @@ body{
     padding: 1.2em;
     display: flex;
     overflow: hidden;
-    
+
     -webkit-transform: skewX(-10deg);
 		-moz-transform: skewX(-10deg);
 		-ms-transform: skewX(-10deg);
-		 transform: skewX(-10deg); 
+		 transform: skewX(-10deg);
 }
 
 .desni{
    background-color: black;
    width: 50%;
- 
-   
+
+
 }
 .korisnik-slika{
     float: right;
@@ -50,4 +50,3 @@ body{
     margin-top: 1.2em;
     cursor: pointer;
 }
-    
