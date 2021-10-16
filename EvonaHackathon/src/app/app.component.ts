@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators'
 
 @Component({
   selector: 'app-root',
@@ -30,9 +29,9 @@ export class AppComponent {
 mappedArray = [];
 
   ngOnInit() {
-    this.posts = this.http.get(this.ROOT_URL).subscribe(s=>{
-      this.sports = s as any;
-      console.log("Ovo je post",this.sports);
-    })
+    //this.posts = this.http.get(this.ROOT_URL).subscribe(s=>{
+      //this.sports = s as any;
+      //console.log("Ovo je post",this.sports);
+    //})
   }
 }

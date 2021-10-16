@@ -1,31 +1,3 @@
-<div *ngFor="let sport of sports">
-  Sport: {{sport.Name}}
-  <div style="margin-left: 20px;" *ngFor="let category of sport.Categories">
-    <!--{{category.Name}}-->
-    <!--Category:{{category.Leagues}}-->
-   <div style="margin-left: 20px;" *ngFor="let leage of category.Leagues">
-   <!--{{leage.Name}}-->
-   <!--Match:{{leage.Matches}}-->
-   <div style="margin-left: 20px;" *ngFor="let match of leage.Matches">
-   <span>
-     {{match.LiveMatchTime}}
-   </span>
-  <span>
-    <b>Home team</b>
-    {{match.TeamHome}}
-  </span>
-  <span>
-    <b>Team Away</b>
-    {{match.TeamAway}}
-  </span>
+<app-sportlist>
 
-  <span>
-    <b>Live match score</b>
-    {{match.LiveMatchScore}}
-  </span>
-
-  </div>
-   </div>
-
-  </div>
-</div>
+</app-sportlist>
