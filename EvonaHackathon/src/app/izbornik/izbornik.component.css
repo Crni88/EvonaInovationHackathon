@@ -1,5 +1,4 @@
 .sve{
-    
     display: flex;
     flex-direction: column;
     margin-top:56px;
@@ -13,9 +12,9 @@
     width: 100%;
     height:72px;
     box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
-    background-color: rgba(47, 47, 47, 0.8);   
+    background-color: rgba(47, 47, 47, 0.8);
     border-bottom: 3px solid #0A84FF;
-   
+
 }
 .image img {
     height:32px;
@@ -28,8 +27,8 @@
      text-align: center;
      margin-top:15px;
  }
- 
- 
+
+
  #slike p{
     font-size: 15px;
     color:white;
@@ -47,9 +46,9 @@
     flex-direction: row;
      height:36.85px;
      width:100%;
-     background-color: rgba(47, 47, 47, 0.8); 
+     background-color: rgba(47, 47, 47, 0.8);
      margin-top:72px;
-     
+
  }
  #SlikaSoccer img{
      margin-top:8.3px;
@@ -67,8 +66,8 @@
     flex-direction: row;
      height:36.85px;
      width:100%;
-     background-color: rgba(47, 47, 47, 0.8); 
-     
+     background-color: rgba(47, 47, 47, 0.8);
+
  }
  .btn2 p{
     color:white;
@@ -82,7 +81,7 @@
     margin-left:20px;
 }
 #obruc1{
-    
+
     justify-content: center;
     height:38px;
     width:38px;
