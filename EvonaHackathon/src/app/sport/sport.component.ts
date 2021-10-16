@@ -9,9 +9,10 @@ export class SportComponent implements OnInit {
 
   constructor() { }
 
-   @Input() Sport = 'sport';
+  @Input() sport:any;
 
   ngOnInit(): void {
+    console.log('input sport: ', this.sport);
   }
 
 }
