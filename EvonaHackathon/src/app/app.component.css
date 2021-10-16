@@ -3,5 +3,9 @@ app-banner-slider{
     z-index: 1000000000;
     /* margin-top: 41px; */
     /* padding: 27PX; */
-    top: 56px;
+    top: 56px;}
+    
+app-root{
+
+position: relative;
 }

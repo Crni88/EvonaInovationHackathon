@@ -10,6 +10,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { BanneriComponent } from './components/banneri/banneri.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerSliderComponent } from './components/banner-slider/banner-slider.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { IzbornikComponent } from './izbornik/izbornik.component';
+import { PageComponent } from './page/page.component';
+
 
 @NgModule({
   declarations: [
@@ -17,6 +22,9 @@ import { BannerSliderComponent } from './components/banner-slider/banner-slider.
     HeaderComponent,
     BanneriComponent,
     BannerSliderComponent,
+    FooterComponent,
+    IzbornikComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,
