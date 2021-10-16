@@ -1,0 +1,13 @@
+<div class="container">
+        <div class="slike">
+            <img src="..\assets\images\Ellipse 50.png" alt="" height="16px" width="16px">
+            <img src="..\assets\images\Line 42.png" alt="" height="1px" width="78px">
+            <img src="..\assets\images\Ellipse 49.png" alt="" height="16px" width="16px" class="crta">
+        </div>
+        <form [formGroup]="formaLogin" >
+            <h1>LOGIN</h1>
+            <input type="text" formControlName ="username" placeholder="Username *" id="username" >
+            <input type="password" formControlName ="password" placeholder="Password *" id ="password">
+            <button type="submit" id="dugme" (click)="onLogin()">LOGIN</button>
+        </form>
+    </div>
