@@ -1,7 +1,5 @@
 .sve{
     display: flex;
-    flex-direction: column;
-    margin-top:56px;
     position:absolute;
     width:100%;
 }
@@ -10,16 +8,21 @@ img:hover{
   cursor: pointer;
 }
 .izbornik{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 100%;
+  width: 100%;
+    justify-content: center;
+    align-items: flex-start;
     height:72px;
     box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
-    background-color: rgba(47, 47, 47, 0.8);
+    background-color: #272B31;
     border-bottom: 3px solid #0A84FF;
-
+    padding-bottom: 50px !important;
 }
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image img {
     height:32px;
     width: 32px;

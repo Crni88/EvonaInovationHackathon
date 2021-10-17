@@ -29,6 +29,9 @@ form {
     margin-left: auto;
     margin-right: auto;
 }
+span{
+  margin-left: 13%;
+}
 h1{
     color: #0A84FF;
     margin-bottom: 2%;
@@ -39,7 +42,7 @@ h1{
     text-align: left;
 }
 button{
-    
+
     background-color: #0A84FF;
     color: white;
     border: none;
@@ -48,6 +51,7 @@ button{
     height: 44px;
     justify-content: center;
     margin-top: 3%;
+    margin-left: 12%;
 }
 ::-ms-reveal {
     filter: invert(100%);
@@ -66,4 +70,9 @@ input.ng-valid {
 .text-muted{
     color: red !important;
     font-size: 12px;
+}
+.container{
+  background-color: #1C1C1F;
+  /* 272b31 */
+  height: 100%;
 }

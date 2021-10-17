@@ -1,3 +1,6 @@
+<app-header></app-header>
+
+
 <div class="container">
     <div class="slike">
         <img src="../assets/images/Ellipse 50@2x.png" alt="" height="16px" width="16px">
@@ -21,6 +24,6 @@
         <span class="text-muted" *ngIf="formaRegistracija.get('email')?.invalid && formaRegistracija.get('email')?.touched">Email is not valid!</span>
 
     </div>
-    <button type="submit" [disabled]="!formaRegistracija.valid">REGISTER</button>
+    <button type="submit" [disabled]="!formaRegistracija.valid" routerLink="/registrationSuccess">REGISTER</button>
     </form>
 </div>
