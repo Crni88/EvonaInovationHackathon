@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { MatchesServis } from '../servisi/matches.servis';
 
 
 @Component({
@@ -10,41 +8,48 @@ import { MatchesServis } from '../servisi/matches.servis';
 })
 export class IzbornikComponent implements OnInit {
 
-  // post={};
+ 
+  constructor() {
+    
+   }
 
-  // readonly ROOT_URL = 'https://stageapis.bet-x.eu/SportOfferApi/api/sport/offer/v3/matches/live';
-
-  // posts:any;
-  // sports: any[] = [];
-
-  constructor(private http:HttpClient,private matchesServis:MatchesServis){
-    // this.posts = this.http.get(this.ROOT_URL).subscribe(s=>{
-    //   this.sports = s as any;
-    //console.log("Ovo je post",this.sports);
-    // });
+  ngOnInit(): void {
+  }
+  
+  toogle1:boolean=true;
+  toogle2:boolean=false;
+  toogle3:boolean=false;
+  enableDisableRule(id:string):void{
+    console.log("click");
+    if(id==="obruc1")
+    {
+      if(!this.toogle1)
+      {
+        this.toogle1=!this.toogle1;
+      this.toogle2=false;
+      this.toogle3=false;
+      }
+      
+    }
+    else if(id==="obruc2")
+    {
+      if(!this.toogle2)
+      {
+        this.toogle2=!this.toogle2;
+      this.toogle1=false;
+      this.toogle3=false;
+      }
+    }
+    else if(id==="obruc3")
+    {
+      if(!this.toogle3)
+      {
+      this.toogle3=!this.toogle3;
+      this.toogle1=false;
+      this.toogle2=false;
+      }
+    }
+   
   }
 
-  ngOnInit(): void {}
-  toogle:boolean=true;
-
-  enableDisableRule():void{
-    this.toogle=!this.toogle;
-  }
-
-  loadAll(){
-   // console.log("Ucitaj sve");
-  }
-
-  onSportClick(SportId:number){
-    this.matchesServis.emmitSportIdSelection(SportId);
-  }
-
-  loadFootball(){
-    //console.log("Ucitavaj",this.sports);
-    // for (let i = 0; i < this.sports.length; i++) {
-    //   const element = this.sports[i];
-    //   if(element.Id ===388)
-    //   {console.log(element);}
-    // }
-  }
 }
