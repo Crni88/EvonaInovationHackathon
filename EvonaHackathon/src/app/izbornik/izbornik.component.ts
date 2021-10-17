@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { HttpClient } from '@angular/common/http';
+import { MatchesServis } from '../servisi/matches.servis';
 
 @Component({
   selector: 'app-izbornik',
@@ -7,16 +9,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./izbornik.component.css']
 })
 export class IzbornikComponent implements OnInit {
- 
+
 
   selectedSportId:any;
-  constructor() {
-    
-   }
+  constructor(private http:HttpClient,private matchesServis:MatchesServis){
+  }
 
   ngOnInit(): void {
   }
-  
+
+  onSportClick(SportId:number){
+    this.matchesServis.emmitSportIdSelection(SportId);
+  }
+
   toogle1:boolean=true;
   toogle2:boolean=false;
   toogle3:boolean=false;

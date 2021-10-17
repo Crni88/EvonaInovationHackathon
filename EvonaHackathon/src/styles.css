@@ -3,11 +3,3 @@ body, html{
     width: 100%;
     background-color: #272B31;
 }
-
-body{
-    background-color: #272B31 !important;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-}
