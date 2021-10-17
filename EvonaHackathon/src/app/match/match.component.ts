@@ -18,7 +18,7 @@ export class MatchComponent implements OnInit {
 
   ucitajRezultat(){
     this.rezultat = this.match.LiveMatchScore.split(':');
-    console.log("Ovo je rezultat",this.rezultat);
+    //console.log("Ovo je rezultat",this.rezultat);
   }
 
 }

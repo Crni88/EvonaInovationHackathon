@@ -1,5 +1,6 @@
 import { Injectable} from "@angular/core";
 import { HttpClient, HttpClientModule, HttpHeaders } from "@angular/common/http";
+import { Subject } from "rxjs";
 
 @Injectable({
     providedIn: 'root'
@@ -7,11 +8,22 @@ import { HttpClient, HttpClientModule, HttpHeaders } from "@angular/common/http"
 
 export class MatchesServis{
 
+
     post={};
     readonly ROOT_URL = 'https://stageapis.bet-x.eu/SportOfferApi/api/sport/offer/v3/matches/live'
 
     posts:any;
     sports: any[] = [];
+
+    sportIdSelection = new Subject();
+
+    listenForSportIdSelection(){
+      return this.sportIdSelection.asObservable();
+    }
+
+    emmitSportIdSelection(SportId:number){
+      this.sportIdSelection.next(SportId);
+    }
 
     constructor(private http:HttpClient){
       this.posts = this.http.get(this.ROOT_URL).subscribe(s=>{
@@ -25,14 +37,8 @@ export class MatchesServis{
     toogle:boolean=true;
     ngOnInit(): void {}
 
-    //napraviti metodu da prosljedi parametar id 
+    //napraviti metodu da prosljedi parametar id
 
-    //subject dodati 
-
-    
-
-
-
-
+    //subject dodati
 
 }

@@ -17,15 +17,11 @@ export class BannerSliderComponent implements OnInit {
 
   public current = 0;
 
-  img_list={
-
-  }
-
-
+  img_list={  }
 
   public banners: any = [];
   constructor(private bannerServis: BannerServis) {
-  
+
     this.bannerServis.getBanneri().subscribe((banners: any) => {
       this.banners=banners;
       console.log(this.banners);

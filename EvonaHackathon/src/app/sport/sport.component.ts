@@ -12,7 +12,7 @@ export class SportComponent implements OnInit {
   @Input() sport:any;
 
   ngOnInit(): void {
-    console.log('input sport: ', this.sport);
+    //console.log('input sport: ', this.sport);
   }
 
 }
