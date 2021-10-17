@@ -13,9 +13,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { BanneriComponent } from './components/banneri/banneri.component';
 import { BannerSliderComponent } from './components/banner-slider/banner-slider.component';
 import { FooterComponent } from './footer/footer.component';
-
 import { IzbornikComponent } from './izbornik/izbornik.component';
 import { PageComponent } from './page/page.component';
+
 
 
 @NgModule({

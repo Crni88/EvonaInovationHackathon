@@ -13,7 +13,7 @@
     height:72px;
     box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
     background-color: rgba(47, 47, 47, 0.8);
-    border-bottom: 3px solid #0A84FF;
+    border-bottom: 2px solid #0A84FF;
 
 }
 .image img {
@@ -58,7 +58,7 @@
  }
  .btn1 p{
     color:white;
-    margin-top:5px;
+    margin-top: 8px;
     margin-left:10px;
  }
  .btn2{
@@ -71,7 +71,7 @@
  }
  .btn2 p{
     color:white;
-    margin-top:5px;
+    margin-top:8px;
     margin-left:10px;
  }
  #SlikaTennis img{
@@ -86,11 +86,11 @@
     height:38px;
     width:38px;
     background-color: none;
-    border:1px solid #0A84FF;
     border-radius: 50%;
     text-align:center;
     margin-top:18px;
     margin-left: 20px;
+    padding-top:2.5px;
 }
 #obruc2{
     justify-content: center;
@@ -120,3 +120,4 @@
 .blue{
     border:1px solid #0A84FF;
 }
+

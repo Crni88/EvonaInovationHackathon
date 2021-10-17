@@ -1,31 +1,31 @@
 <div class="sve">
     <div class="izbornik">
         <div id="slike">
-            <div id="obruc1" >
+            <div id="obruc1" (click)="enableDisableRule('obruc1')"  [ngStyle]="{'border':toogle1? '1px solid #0A84FF':'1px solid white'}">
                 <div class="image">
                     <p>All</p>
                 </div>
             </div>
         
-        <div id="obruc2">
+        <div id="obruc2" (click)="enableDisableRule('obruc2')"  [ngStyle]="{'border':toogle2? '1px solid #0A84FF':'1px solid white'}">
                 <div class="image">
                     <img src="../assets/i_soccer.png">
                 </div>
         </div>
             
-            <div id="obruc3">
+            <div id="obruc3" (click)="enableDisableRule('obruc3')"  [ngStyle]="{'border':toogle3? '1px solid #0A84FF':'1px solid white'}">
                 <div class="image">
                     <img src="../assets/i_tennis.png">
                 </div>
             </div>
         </div>
     </div>
-        
-        <div class="btn1">
+        <div class="btn1" >
             <div id="SlikaSoccer">
                 <img src="../assets/Soccer.png">
             </div>
                 <p>FOOTBALL - IN PLAY</p>
+             
         </div>
         <div class="btn2">
             <div id="SlikaTennis">
@@ -33,5 +33,6 @@
             </div>
             <p>TENNIS - IN PLAY</p>
         </div>
+       
 </div>
 
