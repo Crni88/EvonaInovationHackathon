@@ -6,6 +6,7 @@
     font-weight: regular;
     font-size: 24px;
 }
+
 input {
     display: flex;
     justify-content: center;
@@ -38,8 +39,7 @@ h1{
     text-align: left;
 }
 button{
-    background-color: #0A84FF;
-    color: white;
+   
     border: none;
     border-radius: 5px;
     width: 312px;
@@ -51,5 +51,50 @@ button{
   }
 .slike{
     padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+    
+}
+.crta 
+{
+
+    margin-bottom: 7px;
 }
 
+.sRequired {
+    font-size: 16px;
+    text-align: left;
+}
+
+
+
+
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: .5rem;
+  }
+  
+  select {
+    width: 100%;
+    padding: .5rem;
+  }
+
+ .incorrectP, .poruke {
+    display: flex;
+    justify-content: center;
+    
+    padding: 2%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+  
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+ }

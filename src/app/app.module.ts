@@ -19,7 +19,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ReactiveFormsModule,
     HttpClientModule, 
     FormsModule,
-  
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
