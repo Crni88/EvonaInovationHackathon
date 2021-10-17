@@ -5,6 +5,10 @@
     position:absolute;
     width:100%;
 }
+
+img:hover{
+  cursor: pointer;
+}
 .izbornik{
     display: flex;
     flex-direction: row;
@@ -81,7 +85,6 @@
     margin-left:20px;
 }
 #obruc1{
-
     justify-content: center;
     height:38px;
     width:38px;

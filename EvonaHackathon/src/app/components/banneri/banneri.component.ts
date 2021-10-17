@@ -13,23 +13,23 @@ export class BanneriComponent implements OnInit {
 
   public banners: any = [];
   constructor(private bannerServis: BannerServis) {
-  
+
     this.bannerServis.getBanneri().subscribe((banners: any) => {
       this.banners=banners;
-      console.log(this.banners);
+      //console.log(this.banners);
     })
    }
 
    rb: number=0;
-  
-  
+
+
 
   ngOnInit(): void {
 
   }
 
   prikaziSlike(){
-    
+
   }
 
 }
