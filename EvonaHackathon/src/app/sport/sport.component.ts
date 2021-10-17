@@ -7,6 +7,8 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class SportComponent implements OnInit {
 
+  tarik:any;
+
   constructor() { }
 
   @Input() sport:any;
