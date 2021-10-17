@@ -6,8 +6,12 @@
   justify-content: center !important;
   align-items: center !important;
 }
-.subconainer{
-  width: 50%;
+.subconainer:first-child{
+  width: 40%;
+}
+
+.subconainer:last-child{
+  width: 60%;
 }
 
 .imaPonuda,.nemaPonuda{
@@ -65,14 +69,14 @@
 
 #info{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between ;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .kvota{
   background-color: #1C1C1F;
-  width: 38px;
+  width: 25%;
   height: 5rem;
   display: flex;
   flex-direction: column;
@@ -86,7 +90,7 @@
   border-radius: 4px;
   height: 5rem !important;
   background-color: #1C1C1F;
-  width: 27px;
+  width: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
