@@ -18,5 +18,4 @@ export class RegistrationComponent implements OnInit {
       email : new FormControl('',[Validators.required,Validators.email]),
     })
   }
-
 }

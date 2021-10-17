@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 app-banner-slider{
     position: relative;
     z-index: 1000000000;

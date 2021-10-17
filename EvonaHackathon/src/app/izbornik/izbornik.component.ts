@@ -14,16 +14,14 @@ export class IzbornikComponent implements OnInit {
   selectedSportId:any;
   constructor(private http:HttpClient,private matchesServis:MatchesServis){
   }
-
-  ngOnInit(): void {
-  }
-
   onSportClick(SportId:number){
     this.matchesServis.emmitSportIdSelection(SportId);
   }
 
-  toogle1:boolean=true;
-  toogle2:boolean=false;
-  toogle3:boolean=false;
+  ngOnInit(){
 
+  }
+  //toogle1:boolean=true;
+  //toogle2:boolean=false;
+  //toogle3:boolean=false;
 }

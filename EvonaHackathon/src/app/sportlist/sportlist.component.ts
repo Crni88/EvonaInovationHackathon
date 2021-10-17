@@ -40,5 +40,4 @@ export class SportlistComponent implements OnInit {
       this.selectedSports = this.sports;
     }
   }
-
 }
