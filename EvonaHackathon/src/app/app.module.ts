@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrationSuccessComponent } from './registration-success/registration-success.component';
 import { IzbornikComponent } from './izbornik/izbornik.component';
 import { PageComponent } from './page/page.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { PageComponent } from './page/page.component';
     PageComponent,
     RegistrationComponent,
     RegistrationSuccessComponent,
-    RoutingComponents
+    RoutingComponents,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

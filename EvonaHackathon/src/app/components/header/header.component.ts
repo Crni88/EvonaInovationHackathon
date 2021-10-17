@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/servisi/auth.servis';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 ulogovan: boolean=true;
-  constructor() { }
+  constructor(private authservis:AuthService,private router:Router) { }
+ isLoggedIn:any=false;
 
-  ngOnInit(): void {
-  }
+ ngOnInit(): void {
+  this.isLoggedIn=localStorage.getItem("token");
+}
+
+logout(){
+  localStorage.removeItem("token");
+  this.isLoggedIn=false;
+  this.router.navigate(["/offers"]);
+}
 
   toggleUlogovan(){
     this.ulogovan= !this.ulogovan;
   }
+
+
 
 }
