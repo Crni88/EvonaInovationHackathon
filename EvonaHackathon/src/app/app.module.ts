@@ -4,6 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AppComponent } from './app.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegistrationSuccessComponent } from './registration-success/registration-success.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SportComponent } from './sport/sport.component';
 import { LeagueComponent } from './league/league.component';
@@ -21,6 +24,8 @@ import { PageComponent } from './page/page.component';
 @NgModule({
   declarations: [
     AppComponent,
+    RegistrationComponent,
+    RegistrationSuccessComponent,
     SportComponent,
     LeagueComponent,
     MatchComponent,
@@ -35,6 +40,7 @@ import { PageComponent } from './page/page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     HttpClientModule,
